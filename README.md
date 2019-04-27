@@ -29,3 +29,12 @@ git clone https://github.com/abicorios/Android9PocketDevEnv
 cd Android9PocketDevEnv
 ./inst.sh
 ```
+
+# References
+Read more about:
+
+The Vim is the text editor http://www.vim.org/;
+
+The vim-plug is the plugin manager for the Vim https://github.com/junegunn/vim-plug;
+
+The YouCompleteMe is the autocomplete tool to programm in the Vim like on an IDE https://github.com/Valloric/YouCompleteMe
