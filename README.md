@@ -35,6 +35,6 @@ Read more about:
 
 The Vim is the text editor http://www.vim.org/;
 
-The vim-plug is the plugin manager for the Vim https://github.com/junegunn/vim-plug;
+The Vundle is the plugin manager for the Vim https://github.com/VundleVim/Vundle.vim;
 
 The YouCompleteMe is the autocomplete tool to programm in the Vim like on an IDE https://github.com/Valloric/YouCompleteMe
