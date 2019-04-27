@@ -8,7 +8,7 @@ Android system can automaticaly close Termux, if you switch to another program. 
 
 # Dependencies
 1. The Android device which can run Termux;
-2. The Hacker's Keyboard https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard or https://f-droid.org/en/packages/org.pocketworkstation.pckeyboard/ have the additional keys  (Ctr, Alt, Esc, etc) like on the keyboard for the desktop. But you must set it from 3 to 5 rows. You can want to stop some console programm by the Ctrl+C, so install this full keyboard before using Ping, for example.
+2. The Hacker's Keyboard https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard or https://f-droid.org/en/packages/org.pocketworkstation.pckeyboard/ have the additional keys  (Ctrl, Alt, Esc, etc) like on the keyboard for the desktop. But you must set it from 3 to 5 rows. You can want to stop some console programm by the Ctrl+C, so install this full keyboard before using Ping, for example.
 3. The Termux from the GooglePlay https://play.google.com/store/apps/details?id=com.termux or F-Droid https://f-droid.org/en/packages/com.termux/ is the powerfull command line;
 4. You must know something about Linux and Vim, so study it in the pure Termux for start. Also, for quit from Vim you must print two symbols, first is :, second is q, and after it press Enter key.
 ```
