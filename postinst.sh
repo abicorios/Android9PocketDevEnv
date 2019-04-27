@@ -2,15 +2,15 @@
 sed -i '$d' .profile
 sed -i s/^S/#S/ /etc/pacman.d/mirrorlist
 sed -i s/^#\ S/S/ /etc/pacman.d/mirrorlist
-sed -i s/populate\ archlinux$/populate\ archlinuxarm/
+#sed -i s/populate\ archlinux$/populate\ archlinuxarm/
 
 #Thank AnLinux
 chmod 755 additional.sh
 ./additional.sh
 
 #https://github.com/EXALAB/AnLinux-App/wiki/Arch-Linux--corrupted-packages-with-invalid-gpg-key
-#pacman-key --init
-#pacman-key --populate archlinuxarm
+pacman-key --init
+pacman-key --populate archlinuxarm
 
 echo 'set -o vi'>>.profile
 pacman -Syyu --noconfirm --needed base-devel cmake python python2 clang vim git
@@ -25,3 +25,4 @@ call plug#end()                                         " >> .vimrc
 vim -c PlugInstall -c qa
 echo 'set encoding=utf-8'>>.vimrc
 rm -f postinst.sh
+rm -f additional.sh
