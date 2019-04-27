@@ -27,7 +27,7 @@ In Termux
 pkg install git
 git clone https://github.com/abicorios/Android9PocketDevEnv
 cd Android9PocketDevEnv
-./inst.sh
+bash inst.sh
 ```
 
 # References
