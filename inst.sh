@@ -6,4 +6,4 @@ pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.github
 cp $pr/postinst.sh ~/arch-fs/root/postinst.sh
 echo './postinst.sh'>>~/arch-fs/root/.profile
 sed -i s/C.UTF/en_US.UTF/ start-arch.sh
-./start-arch.sh
+bash start-arch.sh
