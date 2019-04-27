@@ -14,15 +14,11 @@ pacman-key --populate archlinuxarm
 
 echo 'set -o vi'>>.profile
 pacman -Syyu --noconfirm --needed base-devel cmake python python2 clang vim git
-echo "if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-complete --system-libclang' }
-call plug#end()                                         " >> .vimrc
-vim -c PlugInstall -c qa
-echo 'set encoding=utf-8'>>.vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#cp vimrc .vimrc
+vim +PluginInstall +qall
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer --system-libclang
+cd
 rm -f postinst.sh
 rm -f additional.sh
