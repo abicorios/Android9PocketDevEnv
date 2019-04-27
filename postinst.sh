@@ -1,4 +1,5 @@
 #!/bin/bash
+sed -i '$d' .profile
 sed -i s/^S/#S/ /etc/pacman.d/mirrorlist
 sed -i s/^#\ S/S/ /etc/pacman.d/mirrorlist
 
@@ -10,4 +11,3 @@ chmod 755 additional.sh
 pacman-key --init
 pacman-key --populate archlinuxarm
 
-sed -i '$d' .profile
