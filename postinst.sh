@@ -11,7 +11,6 @@ chmod 755 additional.sh
 pacman-key --init
 pacman-key --populate archlinuxarm
 
-pacman -Syyu --noconfirm
 echo 'set -o vi'>>.profile
 pacman -Syu --noconfirm --needed base-devel cmake python python2 clang vim git
 echo "if empty(glob('~/.vim/autoload/plug.vim'))
@@ -23,4 +22,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-complete --system-libclang' }
 call plug#end()                                         " >> .vimrc
 vim -c PlugInstall -c qa
+echo 'set encoding=utf-8'>>.vimrc
 rm -f postinst.sh
